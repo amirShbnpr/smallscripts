@@ -4,10 +4,10 @@ import sys
 from datetime import datetime
 #email sender needs some revisions
 def mail_sender(msg):
-    fromaddr = 'minhooyoon1991@gmail.com'
-    toaddrs  = 'amir.shabanpoor92@gmail.com'
-    username = 'minhooyoon1991@gmail.com'
-    password = 'zludiratqagdzcso'
+    fromaddr = '***'
+    toaddrs  = '***'
+    username = '***'
+    password = '***'
     server = smtplib.SMTP('smtp.gmail.com:587')
     server.ehlo()
     server.starttls()
