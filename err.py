@@ -23,7 +23,7 @@ for j in range(0, len(root)):
 drvClctr = np.array(drvClctr)
 
 errMat = []
-with open("covddb.csv", 'r') as covInp:
+with open("", 'r') as covInp:
     csvRdr = csv.reader(covInp, delimiter=",")
     for row in csvRdr:
         row = [float(item) for item in row]
@@ -44,7 +44,7 @@ for i in range(0,len(root[0])):
     uppBnd.append(root[0][i][1] + outRoot[i])
     dnBnd.append(root[0][i][1] - outRoot[i])
     centre.append(root[0][i][1])
-with open('ddb2p5GeV-MH.dat', 'w+') as outp:
+with open('', 'w+') as outp:
     for i in range(0, len(centre)):
         a = str(xx[i]) + "\t" + str(centre[i]) + "\t" + str(uppBnd[i])+"\t"+ str(dnBnd[i]) + '\n'
         outp.writelines(a)
